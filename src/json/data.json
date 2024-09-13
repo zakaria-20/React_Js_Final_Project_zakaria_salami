@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title":"Boxy T-Shirt with Roll Sleeve Detail",
+        "image":"product1",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu....",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placera...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit..."
+    },
+    {
+        "id": 2,
+        "title":"Boxy1 T-Shirt with Roll Sleeve",
+        "image":"product2",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 3,
+        "title":"Boxy2 T-Shirt with Roll Sleeve",
+        "image":"product3",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 4,
+        "title":"Boxy3 T-Shirt with Roll Sleeve",
+        "image":"product4",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 5,
+        "title":"Boxy4 T-Shirt with Roll Sleeve",
+        "image":"product5",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 6,
+        "title":"Boxy5 T-Shirt with Roll Sleeve",
+        "image":"product6",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 7,
+        "title":"Boxy6 T-Shirt with Roll Sleeve",
+        "image":"product7",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    },
+    {
+        "id": 8,
+        "title":"Boxy7 T-Shirt with Roll Sleeve",
+        "image":"product8",
+        "price":"$20.00",
+        "about":"Fusce ornare mi vel risus porttitor dignissim...",
+        "categories":["boxy", "Shirts", "sleeveless"],
+        "brand":"MyVendor",
+        "description":"Fusce ornare mi vel risus porttitor dignissim...",
+        "additional Infromations":"You can use this tab for adding shipping details, return policies and information or measurements etc..."
+    }
+]
