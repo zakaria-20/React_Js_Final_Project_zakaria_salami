@@ -112,7 +112,7 @@ const Signup = () => {
                     Sign In
                   </button>
                   <Link
-                    to="/home"
+                    to="/"
                     className="ml-2 text-blue-500 hover:underline"
                   >
                     Return to Store

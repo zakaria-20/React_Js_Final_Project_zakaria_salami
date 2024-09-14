@@ -129,7 +129,7 @@ const Register = () => {
                 Create
               </span>
             </button>
-            <Link className="ml-4 text-blue-500 hover:underline" to="/home">
+            <Link className="ml-4 text-blue-500 hover:underline" to="/">
               Return to Store
             </Link>
           </div>
