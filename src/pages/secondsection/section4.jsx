@@ -15,7 +15,7 @@ const Section4 = () => {
 
   return (
     <div className="flex justify-center gap-5 bg-[#f2f2f2] min-h-screen">
-      {/* First Banner Section */}
+     
       <div>
         <article className="relative isolate flex flex-col justify-center items-center overflow-hidden px-8 pb-8 pt-40 w-[40vw] h-[65vh] mx-auto mt-24 shadow-lg rounded-lg">
           <img
@@ -39,7 +39,7 @@ const Section4 = () => {
       {/* Product Display Section */}
       <div className="flex flex-col justify-center items-center mt-[93px] bg-white w-[40vw] h-[65vh] shadow-lg rounded-lg">
         <div className="flex justify-center items-center">
-          {/* Randomly selected image */}
+        
           <img src={images.shopp} alt="Product Image" className="w-[50%]" />
         </div>
         <div className="text-center mt-4">

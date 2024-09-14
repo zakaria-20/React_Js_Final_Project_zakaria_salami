@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import data from "../../json/data.json";
 import images from "../../constant/images";
 import { useNavigate } from "react-router-dom";
 
-const Card = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 6; 
-    const indexOfLastProduct = currentPage * productsPerPage;
-    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    const currentProducts = data.slice(indexOfFirstProduct, indexOfLastProduct);
-    const totalPages = Math.ceil(data.length / productsPerPage);
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
-    const navigate=useNavigate()
+const Card = ({ products }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 6;
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const totalPages = Math.ceil(products.length / productsPerPage);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="flex justify-center gap-3 mb-4">
@@ -50,7 +50,7 @@ const Card = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <h1 onClick={()=>{navigate(`/shop/${e.id}`)}} className="pl-3 text-xl text-gray-400 pt-3 hover:text-[#f5bdb5] cursor-pointer">
+            <h1 onClick={() => { navigate(`/shop/${e.id}`) }} className="pl-3 text-xl text-gray-400 pt-3 hover:text-[#f5bdb5] cursor-pointer">
               {e.title}
             </h1>
             <h1 className="pl-3 text-xl text-gray-400">{e.price}</h1>
@@ -58,26 +58,19 @@ const Card = () => {
         ))}
       </div>
 
-     
       <div className="flex justify-center mt-6">
-        <button
-          onClick={() => paginate(1)}
-          className={`px-3 py-1 border rounded-md mx-1 ${
-            currentPage === 1 ? "bg-gray-400" : "bg-white"
-          }`}
-          disabled={currentPage === 1}
-        >
-          1
-        </button>
-        <button
-          onClick={() => paginate(2)}
-          className={`px-3 py-1 border rounded-md mx-1 ${
-            currentPage === 2 ? "bg-gray-400" : "bg-white"
-          }`}
-          disabled={currentPage === 2}
-        >
-          2
-        </button>
+        {Array.from({ length: totalPages }, (_, i) => (
+          <button
+            key={i + 1}
+            onClick={() => paginate(i + 1)}
+            className={`px-3 py-1 border rounded-md mx-1 ${
+              currentPage === i + 1 ? "bg-gray-400" : "bg-white"
+            }`}
+            disabled={currentPage === i + 1}
+          >
+            {i + 1}
+          </button>
+        ))}
       </div>
     </>
   );

@@ -1,16 +1,23 @@
-import React, { useState } from "react";
-import images from "../../constant/images";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
-import data from "../../json/data.json";
-
+import React from 'react';
+import images from '../../constant/images';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import data from '../../json/data.json';
+import { useMyAppContext } from '../../context';
+import Swal from 'sweetalert2';
 const Carousel2 = () => {
-  const [cart, setCart] = useState([]);
+  const { cart, setCart } = useMyAppContext();
 
   const addToCart = (product) => {
-   
     setCart((prevCart) => [...prevCart, product]);
     console.log("Added to cart:", product);
+    
+    Swal.fire({
+      title: `${product.title}`, 
+      text: "is added to cart!",
+      icon: "success",
+      confirmButtonText: 'Cool'
+    });
   };
 
   return (
